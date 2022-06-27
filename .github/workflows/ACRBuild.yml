@@ -9,7 +9,7 @@ jobs:
     - name: Get code from the repository
       uses: actions/checkout@v1
       with:
-        ref: Main
+        ref: main
 
     - name: Run unit tests
       run: dotnet test MyWebAppTests/*.csproj
