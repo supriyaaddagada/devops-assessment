@@ -23,16 +23,16 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     
     # Container build and push to a Azure Container Registry (ACR)
-    - name: Build and push Docker image
-      uses: docker/build-push-action@v1.1.0
-      with:
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_PASSWORD }}
-        registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-        path: .
-        dockerfile: 'dockerfile'
-        repository: 'devops-assessment'
-        push: true
+    #- name: Build and push Docker image
+    #  uses: docker/build-push-action@v1.1.0
+    #  with:
+    #    username: ${{ secrets.REGISTRY_USERNAME }}
+    #    password: ${{ secrets.REGISTRY_PASSWORD }}
+    #    registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+    #    path: .
+    #    dockerfile: 'dockerfile'
+    #    repository: 'devops-assessment'
+    #    push: true
 
    # - run: |
    #     docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
