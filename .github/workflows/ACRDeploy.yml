@@ -31,7 +31,7 @@ jobs:
         registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
         path: .
         dockerfile: 'dockerfile'
-        repository: 'AKSTest'
+        repository: 'devops-assessment'
         push: true
 
    # - run: |
