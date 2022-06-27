@@ -6,7 +6,7 @@ env:
   CLUSTER_NAME: CloudTestACR
   CLUSTER_RESOURCE_GROUP: cloudtest_acr
   NAMESPACE: default
-  SECRET: ${{ secrets.AZURE_AKS_CREDENTIAL }}
+  SECRET: ${{ secrets.AZURE_CREDENTIAL }}
   APP_NAME: mywebapp
   
 jobs:
