@@ -20,10 +20,10 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v1.1.0
       with:
-        username: 7f033906-4c18-4014-b2b7-d437a14968f8
-        password: 28d03a22-16d9-47eb-81f3-6236e9d42ba6
+        username: ${{ secrets.REGISTRY_USERNAME }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
         registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
         path: .
         dockerfile: 'dockerfile'
-        repository: 'AKSTest'
+        repository: 'devops-assessment'
         push: true
